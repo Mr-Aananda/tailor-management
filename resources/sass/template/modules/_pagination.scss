@@ -1,0 +1,15 @@
+// variables
+@import '../helpers/variables';
+
+body {
+    ul.pagination {
+        li.page-item.active {
+            span.page-link {
+                font-weight: bold;
+                color: $primary-color !important;
+            }
+            
+        }
+    }
+    
+}

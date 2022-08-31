@@ -1,0 +1,146 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class AccountSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run() {
+        $data = [
+            ['account_number' => '001', 'name' => 'Cash', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '002', 'name' => 'Bank', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '003', 'name' => 'Account Receivable', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '004', 'name' => 'Notes Receivable', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '005', 'name' => 'Prepaid Insurance / Unexpired Insurance', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '006', 'name' => 'Prepaid Fire Insurance', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '007', 'name' => 'Prepaid Rent', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '008', 'name' => 'Plant', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '009', 'name' => 'Equipment', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '010', 'name' => 'Furniture', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '011', 'name' => 'Land', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '012', 'name' => 'Building', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '013', 'name' => 'Aircraft', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '014', 'name' => 'Store & Fixtures', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '015', 'name' => 'Prepaid Maintanance service', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '016', 'name' => 'Spare Parts', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '017', 'name' => 'Roofing Supplies', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '018', 'name' => 'Air Conditioned Bus', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '019', 'name' => 'Inventory', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '020', 'name' => 'Parts Inventory', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '021', 'name' => 'Stores Supplies', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '022', 'name' => 'Office Supplies', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '023', 'name' => 'Supplies', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '024', 'name' => 'Truck', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '025', 'name' => 'Delivery Van', 'slug' => '', 'element_id' => 1, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '026', 'name' => 'Accounts Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '027', 'name' => 'Notes Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '028', 'name' => 'Unearned Revenue', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '029', 'name' => 'Unearned Passanger Revenue', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '030', 'name' => 'Mortgage Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '031', 'name' => 'Loan', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '032', 'name' => 'Interest Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '033', 'name' => 'Salaries Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '034', 'name' => 'Utilities Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '035', 'name' => 'Accumulated Depriciation', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '036', 'name' => 'Property Taxes Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '037', 'name' => 'Unearned Rent', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '038', 'name' => 'Income Tax Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '039', 'name' => 'Property Tax Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '040', 'name' => 'Bond Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '041', 'name' => 'Payroll tax Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '042', 'name' => 'VAT Payable', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '043', 'name' => 'Allowance For Doubtful Accounts (ADA)', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '044', 'name' => 'Unearned Management Fee', 'slug' => '', 'element_id' => 2, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '045', 'name' => 'Capital', 'slug' => '', 'element_id' => 3, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '046', 'name' => 'Additional Investment', 'slug' => '', 'element_id' => 3, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '047', 'name' => 'General Reserve / Reserve Fund', 'slug' => '', 'element_id' => 3, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '048', 'name' => 'Service Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '049', 'name' => 'Interest Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '050', 'name' => 'Divident Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '051', 'name' => 'Admission Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '052', 'name' => 'Freight Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '053', 'name' => 'Bowling  Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '054', 'name' => 'Horse Boarding fees Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '055', 'name' => 'Rent Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '056', 'name' => 'Riding and Lesson dees  Revenues', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '057', 'name' => 'Trade Service  Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '058', 'name' => 'Clearing Service Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '059', 'name' => 'Passenger Revenue Earned', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '060', 'name' => 'Royalty Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '061', 'name' => 'Management Fees Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '062', 'name' => 'Interest Income', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '063', 'name' => 'Divident Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '064', 'name' => 'Salaries Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '065', 'name' => 'Gain on Sale of Fixed Assets', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '066', 'name' => 'Consultant Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '067', 'name' => 'Graphics Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '068', 'name' => 'Fees Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '069', 'name' => 'Commision Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '070', 'name' => 'Tour Revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+            ['account_number' => '071', 'name' => 'Automatic Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '072', 'name' => 'Salaries Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '073', 'name' => 'Rent Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '074', 'name' => 'Interesat Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '075', 'name' => 'Supplies Expense (Office / Store)', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '076', 'name' => 'Utilities Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '077', 'name' => 'Advertising Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '078', 'name' => 'Telephone Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '079', 'name' => 'Gasoline Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '080', 'name' => 'Depriciation Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '081', 'name' => 'Wages Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '082', 'name' => 'Payroll Tax  Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '083', 'name' => 'Miscellaneous Expense / Sundry Expense / Other  Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '084', 'name' => 'Uncollectible Expense / Bad Debts  Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '085', 'name' => 'Travel Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '086', 'name' => 'Repair Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '087', 'name' => 'Property Taxes  Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '088', 'name' => 'Insurance  Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '089', 'name' => 'Fuel  Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '090', 'name' => 'Maintenance  Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '091', 'name' => 'Office Salaries  Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '092', 'name' => 'Sundry Office Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '093', 'name' => 'Administrative  Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '094', 'name' => 'Royalty  Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '095', 'name' => 'Legal Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '096', 'name' => 'Accounting Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '097', 'name' => 'Light and Power Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '098', 'name' => 'Service Truck Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '099', 'name' => 'Cleaning Supplies Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '100', 'name' => 'Delivery Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '101', 'name' => 'Audit Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '102', 'name' => 'Hospitality Expense', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '103', 'name' => 'Loss on Sale of Fixed Assets', 'slug' => '', 'element_id' => 5, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '104', 'name' => 'Drawings', 'slug' => '', 'element_id' => 6, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '105', 'name' => 'Withdrawals', 'slug' => '', 'element_id' => 6, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '106', 'name' => 'Income Tax', 'slug' => '', 'element_id' => 6, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '107', 'name' => 'Life Insurance Policy', 'slug' => '', 'element_id' => 6, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '108', 'name' => 'Living Expenses', 'slug' => '', 'element_id' => 6, 'is_debit' => 1, 'is_credit' => 0, 'description' => NULL],
+            ['account_number' => '109', 'name' => 'Sales revenue', 'slug' => '', 'element_id' => 4, 'is_debit' => 0, 'is_credit' => 1, 'description' => NULL],
+        ];
+        
+        // insert 
+        foreach ($data as $account) {
+            // insert into elements 
+            DB::table('elements')->insert([
+                'account_number'    => $account['account_number'],
+                'name'              => $account['name'],
+                'slug'              => $account['slug'],
+                'element_id'        => $account['element_id'],
+                'is_debit'          => $account['is_debit'],
+                'is_credit'         => $account['is_credit'],
+                'description'       => $account['description'],
+                'deleted_at'        => NULL,
+                'created_at'        => now(),
+                'updated_at'        => now()
+            ]);
+        }
+
+    }
+}

@@ -1,0 +1,153 @@
+<ul class="accordion" id="asideAccordion">
+    <!-- Basic -->
+    <li class="ps-3 py-1 fw-bold">Basic</li>
+
+    <li class="accordion-item">
+        <a href="#" class="single-nav-link active">
+            <i class="bi bi-house"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+
+    <li class="accordion-item">
+        <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#dailyTransaction" aria-expanded="false" aria-controls="dailyTransaction">
+            <i class="bi bi-calculator"></i>
+            <span>Daily Transaction</span>
+        </a>
+
+        <ul id="dailyTransaction" class="accordion-collapse collapse" aria-labelledby="headingDailyTransaction" data-bs-parent="#asideAccordion">
+            <li><a href="" class="nav-link">All Records</a></li>
+            <li><a href="" class="nav-link">New Entry</a></li>
+        </ul>
+    </li>
+
+    <li class="accordion-item">
+        <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#parties" aria-expanded="false" aria-controls="parties">
+            <i class="bi bi-people"></i>
+            <span>Parties</span>
+        </a>
+
+        <ul id="parties" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#asideAccordion">
+            <li><a href="" class="nav-link">All Party</a></li>
+            <li><a href="" class="nav-link">New Party</a></li>
+        </ul>
+    </li>
+
+    <li class="accordion-item">
+        <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#banking" aria-expanded="false" aria-controls="banking">
+            <i class="bi bi-credit-card"></i>
+            <span>Banking</span>
+        </a>
+
+        <ul id="banking" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#asideAccordion">
+            <li><a href="" class="nav-link">All Transaction</a></li>
+            <li><a href="" class="nav-link">New Transaction</a></li>
+        </ul>
+    </li>
+
+    <li class="accordion-item">
+        <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#media" aria-expanded="false" aria-controls="media">
+            <i class="bi bi-film"></i>
+            <span>Media</span>
+        </a>
+
+        <ul id="media" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#asideAccordion">
+            <li><a href="#" class="nav-link">Upload</a></li>
+            <li><a href="#" class="nav-link">Gallery</a></li>
+            <li><a href="#" class="nav-link">Album</a></li>
+        </ul>
+    </li>
+
+    <li class="accordion-item">
+        <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#report" aria-expanded="false" aria-controls="report">
+            <i class="bi bi-graph-up"></i>
+            <span>Report</span>
+        </a>
+
+        <ul id="report" class="accordion-collapse collapse" aria-labelledby="headingReport" data-bs-parent="#asideAccordion">
+            <li><a href="#" class="nav-link">Ledger</a></li>
+            <li><a href="#" class="nav-link">Trial Balance</a></li>
+            <li><a href="#" class="nav-link">Balance Sheet</a></li>
+            <li><a href="#" class="nav-link">Income Statement</a></li>
+            <li><a href="#" class="nav-link">Cash flow Sheet</a></li>
+            <li><a href="#" class="nav-link">OE Sheet</a></li>
+        </ul>
+    </li>
+    <!-- Basic end -->
+
+    <!-- Settings -->
+    <li class="ps-3 py-1 mt-2 fw-bold">Settings</li>
+
+    <li class="accordion-item">
+        <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#element" aria-expanded="false" aria-controls="element">
+            <i class="bi bi-columns-gap"></i>
+            <span>Element</span>
+        </a>
+
+        <ul id="element" class="accordion-collapse collapse" aria-labelledby="headingElement" data-bs-parent="#asideAccordion">
+            <li><a href="" class="nav-link">All Records</a></li>
+            <li><a href="" class="nav-link">New Entry</a></li>
+        </ul>
+    </li>
+
+    <li class="accordion-item">
+        <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#account" aria-expanded="false" aria-controls="account">
+            <i class="bi bi-folder-plus"></i>
+            <span>Ledger account</span>
+        </a>
+
+        <ul id="account" class="accordion-collapse collapse" aria-labelledby="headingAccount" data-bs-parent="#asideAccordion">
+            <li><a href="" class="nav-link">All Records</a></li>
+            <li><a href="" class="nav-link">New Entry</a></li>
+        </ul>
+    </li>
+
+    <li class="accordion-item">
+        <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#journal" aria-expanded="false" aria-controls="journal">
+            <i class="bi bi-card-list"></i>
+            <span>Journal</span>
+        </a>
+
+        <ul id="journal" class="accordion-collapse collapse" aria-labelledby="headingJournal" data-bs-parent="#asideAccordion">
+            <li><a href="" class="nav-link">All Records</a></li>
+            <li><a href="" class="nav-link">New Entry</a></li>
+        </ul>
+    </li>
+
+    <li class="accordion-item">
+        <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#cash" aria-expanded="false" aria-controls="cash">
+            <i class="bi bi-cash"></i>
+            <span>Cash</span>
+        </a>
+
+        <ul id="cash" class="accordion-collapse collapse" data-bs-parent="#asideAccordion">
+            <li><a href="" class="nav-link">All Cash</a></li>
+            <li><a href="" class="nav-link">New Cash</a></li>
+        </ul>
+    </li>
+
+    <li class="accordion-item">
+        <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#bank" aria-expanded="false" aria-controls="banking">
+            <i class="bi bi-credit-card"></i>
+            <span>Bank</span>
+        </a>
+
+        <ul id="bank" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#asideAccordion">
+            <li><a href="" class="nav-link">All Bank</a></li>
+            <li><a href="" class="nav-link">New Bank</a></li>
+        </ul>
+    </li>
+
+    <li class="accordion-item">
+        <a href="#" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#bank-account" aria-expanded="false" aria-controls="banking">
+            <i class="bi bi-credit-card"></i>
+            <span>Bank Account</span>
+        </a>
+
+        <ul id="bank-account" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#asideAccordion">
+            <li><a href="" class="nav-link">All Bank Account</a></li>
+            <li><a href="" class="nav-link">New Bank Account</a></li>
+        </ul>
+    </li>
+    <!-- Settings end -->
+</ul>

@@ -1,0 +1,48 @@
+// variables
+@import '../helpers/mixins';
+@import '../helpers/variables';
+
+// media gallery style
+.media_gallery{
+    margin-bottom: 50px;
+    .row{
+        @include flex-box($flex-wrap: nowrap);
+        padding: 0 4px;
+        .column{
+            flex: 25%;
+            width: 25%;
+            overflow-x: hidden;
+            padding: 0 4px;
+            @media  (max-width: 992px) {
+                flex: 50%;
+                width: 50%;
+            }
+            @media  (max-width: 600px) {
+                flex: 100%;
+                width: 100%;
+            }
+            .gallery-item{
+                position: relative;
+                img{
+                    margin-top: 8px;
+                    vertical-align: middle;
+                    width: 100%;
+                    cursor: pointer;
+                    transition: none;
+                    &:hover{
+                        opacity: .9;
+                    }
+                }
+                .action{
+                    position: absolute;
+                    top: 20px;
+                    right: -50px;
+                    transition: all linear .2s;
+                }
+                &:hover .action{
+                    right: 10px;
+                }
+            }
+        }
+    }
+}
