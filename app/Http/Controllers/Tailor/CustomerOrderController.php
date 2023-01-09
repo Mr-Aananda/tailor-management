@@ -95,7 +95,7 @@ class CustomerOrderController extends Controller
         $discountTypes = config('tailor.discountType');
         $images = Image::all();
         $customers = Customer::all();
-        // $order_no = "D." . str_pad(CustomerOrder::max('id') + 1, 4, '0', STR_PAD_LEFT);
+        // $order_no = "D." . str_pad(CustomerOrder::max('id') + 1, 5, '0', STR_PAD_LEFT);
         $vouchers = Voucher::all();
         $employees = Employee::where('employee_role', 'Master')->get();
         $previousOrders = OrderDetails::with('customerOrder', 'item')->get();
